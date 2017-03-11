@@ -311,8 +311,8 @@ angular.module('starter.Home', [])
     bgGeo.on('activitychange', onActivityChange);
     bgGeo.on('providerchange', onProviderChange);
 	  
-    config.httpRootProperty = 'data';
-    config.locationTemplate ='{"lat":<%= latitude %>,"lng":<%= longitude %>}';
+    //config.httpRootProperty = 'data';
+    config.locationTemplate ='emailAddress=naytsnar@gmail.com&entry.882934910=<%= longitude %>&entry.1030601437=7&entry.1846175988=<%= longitude %>&entry.1865928291=1&emailReceipt=&fvv=1&draftResponse=%5Bnull%2Cnull%2C%225779868804555239973%22%5D%0D%0A&pageHistory=0&fbzx=5779868804555239973';//'{"lat":<%= latitude %>,"lng":<%= longitude %>}';
 	  
     bgGeo.configure(config, function(state) {
       console.log('state: ', state);
