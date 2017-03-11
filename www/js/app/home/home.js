@@ -310,7 +310,10 @@ angular.module('starter.Home', [])
     bgGeo.on('schedule', onSchedule);
     bgGeo.on('activitychange', onActivityChange);
     bgGeo.on('providerchange', onProviderChange);
-
+	  
+    config.httpRootProperty = 'data';
+    config.locationTemplate ='{"lat":<%= latitude %>,"lng":<%= longitude %>}';
+	  
     bgGeo.configure(config, function(state) {
       console.log('state: ', state);
 
