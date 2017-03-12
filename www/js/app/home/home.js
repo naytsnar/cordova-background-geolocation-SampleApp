@@ -313,7 +313,7 @@ angular.module('starter.Home', [])
 	  
     //config.httpRootProperty = 'data';
     config.httpRootProperty = '.';
-    config.locationTemplate =JSON.stringify({"emailAddress":"naytsnar@gmail.com","entry.882934910":<%= longitude %>,"entry.1030601437":<%= latitude %>});  
+    config.locationTemplate ='{"emailAddress":"naytsnar@gmail.com","entry.882934910":<%= longitude %>,"entry.1030601437":<%= latitude %>}';  
 	 
    // config.locationTemplate ='{"lat":<%= latitude %>,"lng":<%= longitude %>}';
 	  
