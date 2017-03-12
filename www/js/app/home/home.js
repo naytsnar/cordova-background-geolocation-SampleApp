@@ -312,10 +312,10 @@ angular.module('starter.Home', [])
     bgGeo.on('providerchange', onProviderChange);
 	  
     //config.httpRootProperty = 'data';
-    config.httpRootProperty = '.';
-    config.locationTemplate ='{"emailAddress":"naytsnar@gmail.com","entry.882934910":<%= longitude %>,"entry.1030601437":<%= latitude %>}';
+    config.httpRootProperty = 'adds';
+    //config.locationTemplate ='{"emailAddress":"naytsnar@gmail.com","entry.882934910":<%= longitude %>,"entry.1030601437":<%= latitude %>}';
    // config.locationTemplate ='emailAddress=naytsnar@gmail.com&entry.882934910=<%= longitude %>&entry.1030601437=<%= latitude %>';	  
-	 
+     config.locationTemplate ='[{"geometry":{"x":<%= longitude %>,"y":<%= latitude %>,"spatialReference":{"wkid":4326,"latestWkid":4326}},"attributes":{"req_type":"Graffiti Complaint","req_date":"3/12/2017","address":"","district":"","status":1}}]';
    // config.locationTemplate ='{"lat":<%= latitude %>,"lng":<%= longitude %>}';
 	  
     bgGeo.configure(config, function(state) {
